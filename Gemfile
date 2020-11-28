@@ -61,3 +61,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add 2020/11/28
 gem 'jquery-rails'
+gem 'bootstrap-sass'
