@@ -620,3 +620,266 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 9685)
 
 
+Started GET "/" for ::1 at 2020-11-29 11:46:10 +0900
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 122.4ms | ActiveRecord: 0.0ms | Allocations: 24234)
+
+
+Started GET "/users/new" for ::1 at 2020-11-29 11:46:12 +0900
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 5273)
+
+
+  
+NoMethodError (undefined method `VALID_PASSWORD_REGEX' for #<Class:0x00007ff987fe3958>
+Did you mean?  valid_scope_name?):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/users/new" for ::1 at 2020-11-29 11:47:24 +0900
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 5075)
+
+
+  
+NoMethodError (undefined method `VALID_PASSWORD_REGEX' for #<Class:0x00007ff989034ff0>
+Did you mean?  valid_scope_name?):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/users/new" for ::1 at 2020-11-29 11:48:06 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3223)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 17.2ms | ActiveRecord: 1.1ms | Allocations: 17493)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:48:22 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"KYV9uhL/pMDtZQHZFWqx+knt9fMvkUmKYTtzxXOzdq5yRQ5+DiCcH3TXsRrzuodfr70FpzGtvjmGVEG2UdYnow==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1103)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 229ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 11304)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:48:32 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"XwoVqNNECG5/yW3KFjkKj6Lge969XaVgb5PN+Vdh3gYEymZsz5swseZ73Qnw6TwqRLCLiqNhUtOI/P+KdQSPCw==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1093)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 224ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 11325)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:48:50 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"GaVvWacGlwrQm+ZUtcDvcWxYrJszg+0bWJ7hE9bBmFRCZRydu9mv1UkpVpdTENnUighczy2/Gqi/8dNg9KTJWQ==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 225ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 10950)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:49:24 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"6qYz3kCKJy5HIml4vsHkkpkDutNRvB0WpkHVvqdNKHmxZkAaXFUf8d6Q2btYEdI3f1NKh0+A6qVBLufNhSh5dA==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1093)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 226ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 10953)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:49:40 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"esHXL5/erqj1SZirZMVhgFA6g2ySEMXMaEkuAw1JjMohAaTrgwGWd2z7KGiCFVcltmpzOIwsMn+PJhxwLyzdxw==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1093)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 221ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 10977)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:50:53 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"N4sIyJnnh/UhwmXi27T1hs41ZAmo5b5pizdCKzrCllxsS3sMhTi/Krhw1SE9ZMMjKGWUXbbZSdpsWHBYGKfHUQ==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1249)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 223ms (Views: 10.3ms | ActiveRecord: 4.6ms | Allocations: 15881)
+
+
+Started GET "/" for ::1 at 2020-11-29 11:54:21 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 8774)
+
+
+Started GET "/users/new" for ::1 at 2020-11-29 11:54:24 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1069)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms | Allocations: 9678)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:54:43 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"qvwU9m0GD+reRIVyCu9D3uVy2/ec1eIpuHROq/tPtjTxPGcycdk3NUf2NbHsP3V7AyIro4LpFZpfG3zY2SrnOQ==", "user"=>{"name"=>"test4", "email"=>"test4@test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 223ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 10655)
+
+
+Started GET "/" for ::1 at 2020-11-29 11:55:23 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 98.9ms | ActiveRecord: 0.0ms | Allocations: 24240)
+
+
+Started GET "/users/new" for ::1 at 2020-11-29 11:55:25 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 31.5ms | ActiveRecord: 1.2ms | Allocations: 17558)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:55:38 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Hg8v1vko+J9a18dcR0uS79S0/LzINyIzpcb3WbiBqDNFz1wS5ffAQMNld5+hm6RKMuQM6NYL1YBCqcUqmuT5Pg==", "user"=>{"name"=>"test4", "email"=>"test4@test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 224ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 10967)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:58:12 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"wLnSiTVP8l+57zliScZMYneSd2HENsaAy9RBKFJjfQCbeaFNKZDKgCBdiaGvFnrHkcKHNdoKMTMsu3NbcAYsDQ==", "user"=>{"name"=>"test4", "email"=>"test4@test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('test4', 'test4@test', '2020-11-29 02:58:12.911007', '2020-11-29 02:58:12.911007', '$2a$12$c06EjVjSehVyPgebWTaYSeKqdyMVsq895F4esWNRDOAcyQIHFUy5S')[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 226ms (ActiveRecord: 3.4ms | Allocations: 7958)
+
+
+Started GET "/" for ::1 at 2020-11-29 11:58:12 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 8834)
+
+
+Started GET "/users/new" for ::1 at 2020-11-29 11:58:18 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 10043)
+
+
+Started POST "/users" for ::1 at 2020-11-29 11:59:55 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"rbGgJ583v6L9DMUsMZN3P4RGIkBctwq4IQU1OJC/Lmn2cdPjg+iHfWS+de/XQ0GaYhbSFEKL/QvGagdLstp/ZA==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1250)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 238ms (Views: 22.8ms | ActiveRecord: 0.9ms | Allocations: 15998)
+
+
+Started POST "/users" for ::1 at 2020-11-29 12:00:04 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"TcHg3HTNcgsqy0bbgQwIXuHt+hTfAda8LFhNroJJlTEWAZMYaBJK1LN59hhn3D77B70KQME9IQ/LN3/doCzEPA==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 219ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 10680)
+
+
+Started POST "/users" for ::1 at 2020-11-29 12:02:06 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"gk1cpq2euKfWtfV92CSR8plIW5MSd8npjechW6HuYDbZjS9isUGAeE8HRb4+9KdXfxirxwxLPlpqiBMog4sxOw==", "user"=>{"name"=>"test5", "email"=>"test@test5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('test5', 'test@test5', '2020-11-29 03:02:07.234628', '2020-11-29 03:02:07.234628', '$2a$12$NFrEByzf6yhDfY6iKDrjAOnJh0fwO.uA9PhjRIn56UKH0h2znWQai')[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 227ms (ActiveRecord: 3.7ms | Allocations: 7932)
+
+
+Started GET "/" for ::1 at 2020-11-29 12:02:07 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 8844)
+
+
+Started GET "/users/new" for ::1 at 2020-11-29 12:02:17 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 10021)
+
+
+Started POST "/users" for ::1 at 2020-11-29 12:02:28 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"7AXrrXzI0c7UUafgBLydrKrOXxHD4J+mXLv0NSn1bnu3xZhpYBfpEU3jFyPibKsJTJ6vRd3caBW71MZGC5A/dg==", "user"=>{"name"=>"test4", "email"=>"test4@test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1092)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 218ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 10658)
+
+
+Started POST "/users" for ::1 at 2020-11-29 12:03:00 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Em0G2kfEbmGx1PxDICGYMcpf80wy9cl45av+CpqP6J1JrXUeWxtWvihmTIDG8a6ULA8DGCzJPssCxMx5uOq5kA==", "user"=>{"name"=>"test4", "email"=>"test4@test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 223ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 10653)
+
+
+Started POST "/users" for ::1 at 2020-11-29 12:03:06 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"TkAg5bPQfJG2ZVVnjyFFY5FCJv/HAjgGdKGAp+PgO+AVgFMhrw9ETi/X5aRp8XPGdxLWq9k+z7WTzrLUwYVq7Q==", "user"=>{"name"=>"test4", "email"=>"test4@test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('test4', 'test4@test', '2020-11-29 03:03:07.132525', '2020-11-29 03:03:07.132525', '$2a$12$RZoeN5or0O1Dd7YPZ3rwiOJuwaAB3AAIMWSZmmGWB2AaIjEwuYRTC')[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 211ms (ActiveRecord: 1.3ms | Allocations: 2887)
+
+
+Started GET "/" for ::1 at 2020-11-29 12:03:07 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 8679)
+
+
